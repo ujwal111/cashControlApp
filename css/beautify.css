@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    color:white;
+}
+body{
+    background-color: #1b262c;
+}
+
+/*Styling for the navbar */
+.navbar{
+    background:#1b262c;
+    display:flex;
+}
+.navbar h1{
+    color:white;
+    padding-top:10px;
+    flex-grow:1;
+    font-size: 40px;
+    margin-left: 70px;
+}
+.navbar h1 a{
+    text-decoration:none;
+    color:white;
+}
+.menus ul{
+    display:flex;
+    flex-direction:row;
+}
+.navbar li{
+    list-style:none;
+    padding:20px;
+}
+.navbar li a{
+    color:white;
+    text-decoration:none;
+}
+
+.navbar li a:hover{
+    color:#3282b8;
+}
+
+.hamburger .lines{
+    display:none;
+}
+
+/*style for the form*/
+.form h1{
+    margin-top: 100px;
+    text-align:center;
+}
+ .form form{
+     border:2px solid white;
+     display: flex;
+     flex-direction: column;
+     width:36%;
+     margin: 38px  auto 0px auto;
+     padding:20px;
+     border-radius:10px;
+ }
+ .form input{
+     padding:9px;
+     margin: 25px;
+     border-radius: 10px;
+ }
+
+ .form input{
+     color:black;
+ }
+
+ /* Style for the button*/
+ input[type='submit']{
+    background:#1b262c;
+    color:white;
+    border-radius:10px;
+ }
+
+
+ /*Mobile view for the website*/
+
+ @media screen and (max-width:800px){
+ 
+    .hamburger .lines{
+    height:4px;
+    width:26px;
+    background-color:white;
+    margin:9px;
+    display:block;
+}
+    .menus{
+    display:none;
+    position:absolute;
+    height:90vh;
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+    background:#1b262c;
+    margin-top:48px;
+    }
+    .menus ul{
+        flex-direction:column;
+    }
+    .show{
+        display:flex;
+    }
+    .form form{
+       
+        width:80%;
+        
+    }
+}
